@@ -11,3 +11,9 @@ functions:
       - http:
           path: hello
           method: get
+  greet:
+    handler: src/helloworld/handler.greet
+    events:
+      - http:
+          path: greet
+          method: post
